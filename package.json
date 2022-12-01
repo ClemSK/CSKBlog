@@ -1,0 +1,44 @@
+{
+  "name": "blue-chip-devs-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "blue-chip-devs-blog",
+  "author": "Clement Seconde-Kynnersely",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@babel/core": ">=7.12.3 <8.0.0",
+    "@mdx-js/react": "^2.1.5",
+    "babel-eslint": "^10.0.0",
+    "eslint": ">= 4.12.1",
+    "gatsby": "^5.2.0",
+    "gatsby-plugin-image": "^3.2.0",
+    "gatsby-plugin-manifest": "^5.2.0",
+    "gatsby-plugin-mdx": "^5.2.0",
+    "gatsby-plugin-sass": "^6.2.0",
+    "gatsby-plugin-sharp": "^5.2.0",
+    "gatsby-plugin-sitemap": "^6.2.0",
+    "gatsby-source-filesystem": "^5.2.0",
+    "gatsby-transformer-sharp": "^5.2.0",
+    "graphql": ">=16.0.0 <17.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.56.1",
+    "webpack": "^4.36.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "typescript": "^4.8.4"
+  }
+}
