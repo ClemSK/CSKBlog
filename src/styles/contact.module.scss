@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .labelAndInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .label {
+    display: flex;
+    //   padding: 2%;
+    margin: 1%;
+  }
+
+  .input {
+    //   padding: 2%;
+    margin: 2%;
+    width: 100%;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: end;
+  }
+}
