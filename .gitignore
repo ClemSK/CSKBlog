@@ -2,4 +2,4 @@ node_modules
 .cache
 gatsby-types.d.ts
 public
-gatsby-config.ts
+# gatsby-config.ts
