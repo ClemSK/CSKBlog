@@ -4,23 +4,21 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Seo from '../components/seo';
 import * as styles from '../styles/contact.module.scss';
 
-const IndexPage = () => {
+const ContactPage = () => {
   return (
     <div className={styles.container}>
-      <Layout pageTitle="Home Page">
+      <Layout pageTitle="Contact Page">
         <p>Contact me here!</p>
-        <StaticImage
+        {/* <StaticImage
           alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
           src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-        />
+        /> */}
         <form action="SEND" method="POST" className={styles.form}>
           <div className={styles.labelAndInputContainer}>
             <label className={styles.label} htmlFor="Name">
               Name
             </label>
             <input className={styles.input} type="text" name="Name" required />
-            {/* </div> */}
-            {/* <div className={styles.labelAndInputContainer}> */}
             <label className={styles.label} htmlFor="Email">
               Email
             </label>
@@ -30,8 +28,6 @@ const IndexPage = () => {
               name="Email"
               required
             />
-            {/* </div> */}
-            {/* <div className={styles.labelAndInputContainer}> */}
             <label className={styles.label} htmlFor="Message">
               Message
             </label>
@@ -43,8 +39,12 @@ const IndexPage = () => {
               rows={10}
               required
             />
-            <div className={styles.submit}>
-              <input type="submit" value="Send" />
+            <div className={styles.submitContainer}>
+              <input
+                type="submit"
+                value="Send"
+                className={styles.submitButton}
+              />
             </div>
           </div>
         </form>
@@ -55,4 +55,4 @@ const IndexPage = () => {
 
 export const Head = () => <Seo title="Home Page" />;
 
-export default IndexPage;
+export default ContactPage;

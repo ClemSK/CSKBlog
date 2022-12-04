@@ -1,5 +1,9 @@
 .container {
-  width: 100%;
+  // max-width: 700;
+  //   width: 100%;
+  @media screen and (max-width: 400px) {
+    width: 350;
+  }
 }
 .form {
   display: flex;
@@ -12,23 +16,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 60%;
   }
 
   .label {
     display: flex;
-    //   padding: 2%;
     margin: 1%;
   }
 
   .input {
-    //   padding: 2%;
     margin: 2%;
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(51, 153, 121, 0.5);
+    border: none;
+    padding: 2% 5%;
+    margin: 5% 0;
   }
 
-  .submit {
+  .submitContainer {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  .submitButton {
+    background-color: rgb(51, 153, 121);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(51, 153, 121, 0.5);
+    border: none;
+    padding: 2% 5%;
   }
 }

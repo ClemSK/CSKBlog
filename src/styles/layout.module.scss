@@ -1,6 +1,5 @@
 .section {
   display: flex;
-  //   border: 2px solid red;
   justify-content: center;
   max-width: 700px;
   font-family: sans-serif;
@@ -11,6 +10,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .contentContainer {
+    //   700px in vw
+    width: 48.64vw;
+    @media screen and (max-width: 400px) {
+      width: 96vw;
+    }
   }
 
   .heading {
@@ -40,7 +48,6 @@
 
   .site-title {
     font-size: 3rem;
-    // color: gray;
     font-weight: 700;
     margin: 3rem 0;
     background: -webkit-linear-gradient(
