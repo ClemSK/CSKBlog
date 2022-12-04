@@ -39,7 +39,7 @@ const config: GatsbyConfig = {
     //   __key: 'pages',
     // },
     {
-      resolve: 'gatsby-plugin-mdx',
+      resolve: 'gatsby-source-filesystem',
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
