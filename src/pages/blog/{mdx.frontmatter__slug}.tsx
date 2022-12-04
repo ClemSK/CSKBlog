@@ -39,6 +39,11 @@ const BlogPost = ({ data, children }: IBlog) => {
         </div>
         {children}
       </Layout>
+      <script
+        data-goatcounter="https://bluechipdevs.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      />
     </>
   );
 };
