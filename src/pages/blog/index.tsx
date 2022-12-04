@@ -10,32 +10,39 @@ interface blog {
 
 const BlogPage = ({ data }: blog) => {
   return (
-    <Layout pageTitle="My Blog Posts">
-      {data.allMdx.nodes.map(
-        (node: {
-          id: string;
-          frontmatter: {
-            slug: any;
-            title: string;
-            date: string;
-          };
-          excerpt: string;
-        }) => (
-          <article key={node.id}>
-            <h2>
-              <Link
-                to={`/blog/${node.frontmatter.slug}`}
-                className={styles.blogTitles}
-              >
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
-          </article>
-        )
-      )}
-    </Layout>
+    <>
+      <Layout pageTitle="My Blog Posts">
+        {data.allMdx.nodes.map(
+          (node: {
+            id: string;
+            frontmatter: {
+              slug: any;
+              title: string;
+              date: string;
+            };
+            excerpt: string;
+          }) => (
+            <article key={node.id}>
+              <h2>
+                <Link
+                  to={`/blog/${node.frontmatter.slug}`}
+                  className={styles.blogTitles}
+                >
+                  {node.frontmatter.title}
+                </Link>
+              </h2>
+              <p>Posted: {node.frontmatter.date}</p>
+              <p>{node.excerpt}</p>
+            </article>
+          )
+        )}
+      </Layout>
+      <script
+        data-goatcounter="https://bluechipdevs.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      />
+    </>
   );
 };
 
