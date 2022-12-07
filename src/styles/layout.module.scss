@@ -14,7 +14,7 @@
   }
 
   .contentContainer {
-    //   700px in vw
+    //   700px in ff
     width: 36.5vw;
     @media screen and (max-width: 400px) {
       width: 96vw;
@@ -22,7 +22,8 @@
   }
 
   .heading {
-    color: rgb(51, 153, 121);
+    // color: rgb(51, 153, 121);
+    color: #ffe133;
   }
   .navContainer {
     display: flex;
@@ -43,18 +44,62 @@
     padding-right: 2rem;
   }
   .nav-link-text {
-    color: black;
+    color: #58b6bd;
+    text-decoration: none;
+  }
+  .nav-link-text:hover {
+    // color: #58b6bd;
+    // text-decoration: underline;
+    border-bottom: solid 4px #58b6bd;
   }
 
   .site-title {
     font-size: 3rem;
     font-weight: 700;
     margin: 3rem 0;
-    background: -webkit-linear-gradient(
-      45deg,
-      rgb(77, 130, 50),
-      rgb(55, 62, 249)
-    );
+    background: #00b5e5;
+    // background: #58b6bd;
+    // background: #0a5a73;
+    // background: -webkit-linear-gradient(
+    //   45deg,
+    //   rgb(77, 130, 50),
+    //   rgb(55, 62, 249)
+    // );
+    // background: -webkit-linear-gradient(
+    //   45deg,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd,
+    //   #0a5a73,
+    //   #58b6bd
+    // );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
