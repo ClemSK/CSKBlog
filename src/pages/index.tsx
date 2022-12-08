@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <>
       <div className={styles.container}>
-        <Layout pageTitle="Home Page">
+        <Layout pageTitle="Home">
           <p>My great home page!</p>
           <StaticImage
             alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
@@ -25,6 +25,6 @@ const IndexPage = () => {
   );
 };
 
-export const Head = () => <Seo title="Home Page" />;
+export const Head = () => <Seo title="Home" />;
 
 export default IndexPage;
