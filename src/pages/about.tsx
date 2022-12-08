@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <>
       <div className={styles.container}>
-        <Layout pageTitle="About Me">
+        <Layout pageTitle="About me">
           <p>Hi there! I'm the proud creators of this site.</p>
           <StaticImage
             alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
@@ -47,6 +47,6 @@ const AboutPage = () => {
   );
 };
 
-export const Head = () => <Seo title="Home Page" />;
+export const Head = () => <Seo title="About me" />;
 
 export default AboutPage;

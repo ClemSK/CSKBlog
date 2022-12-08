@@ -16,14 +16,15 @@
   .contentContainer {
     //   700px in ff
     width: 36.5vw;
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 430px) {
       width: 96vw;
     }
   }
 
   .heading {
     // color: rgb(51, 153, 121);
-    color: #ffe133;
+    // color: #ffe133;
+    color: #00b5e5;
   }
   .navContainer {
     display: flex;
@@ -53,6 +54,11 @@
     border-bottom: solid 4px #58b6bd;
   }
 
+  .hrStyles {
+    width: 100%;
+    border: 2px solid #ffe133;
+    color: black;
+  }
   .site-title {
     font-size: 3rem;
     font-weight: 700;

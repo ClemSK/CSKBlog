@@ -11,7 +11,7 @@ interface blog {
 const BlogPage = ({ data }: blog) => {
   return (
     <>
-      <Layout pageTitle="My Blog Posts">
+      <Layout pageTitle="Blog Posts">
         {data.allMdx.nodes.map(
           (node: {
             id: string;
@@ -62,6 +62,6 @@ export const query = graphql`
   }
 `;
 
-export const Head = () => <Seo title="My Blog Posts" />;
+export const Head = () => <Seo title="Blog Posts" />;
 
 export default BlogPage;
