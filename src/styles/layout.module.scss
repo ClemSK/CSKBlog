@@ -35,14 +35,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // align-content: space-between;
     width: 100%;
+    // border: solid 2px red;
 
     list-style: none;
     text-decoration: none;
     padding-left: 0;
+    margin: 1% 5%;
   }
   .nav-link-item {
-    padding-right: 2rem;
   }
   .nav-link-text {
     color: #58b6bd;
