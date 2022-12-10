@@ -20,12 +20,16 @@ const BlogPost = ({ data, children }: IBlog) => {
       <Layout pageTitle={data.mdx.frontmatter.title}>
         <div className={styles.dateAndBackButton}>
           <p>{data.mdx.frontmatter.date}</p>
-          <Link to="/blog" className={styles.navLinkText}>
-            Back
-          </Link>
         </div>
         <div className={styles.imgContainer}>
           <GatsbyImage
+            // imgStyle={{ width: '1000px' }}
+            style={{
+              width: '100%',
+              height: '500px',
+            }}
+            // width={"100"}
+            // height="100%"
             image={image}
             alt={data.mdx.frontmatter.hero_image_alt}
             className={styles.img}

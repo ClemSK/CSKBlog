@@ -3,3 +3,17 @@
   //   color: coral;
   text-decoration: none;
 }
+
+.blogLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  width: 100%;
+
+  .btnContainer {
+    display: flex;
+    align-self: center;
+    align-items: center;
+  }
+}

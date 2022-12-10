@@ -1,4 +1,6 @@
 .container {
+  width: 100vw;
+  max-width: 1200px;
   // max-width: 700;
   //   width: 100%;
   @media screen and (max-width: 400px) {
@@ -27,8 +29,8 @@
   .input {
     margin: 2%;
     width: 100%;
-    border-radius: 5px;
-    // border: 1px, solid #0a5a73;
+    // border-radius: 5px;
+    border: 1px, solid #0a5a73;
     box-shadow: 5px 5px 5px #0a5a73;
     // box-shadow: 5px 5px 5px rgba(51, 153, 121, 0.5);
     border: none;

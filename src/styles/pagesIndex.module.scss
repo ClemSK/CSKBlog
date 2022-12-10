@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins&family=Roboto:wght@700&family=Share+Tech+Mono&display=swap');
+
+* {
+  font-family: 'Oswald', sans-serif;
+  //   text-transform: uppercase;
+}
+
 html {
   //   background-color: rgb(255, 255, 199);
   background-color: white;
   display: flex;
   justify-content: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 // body {

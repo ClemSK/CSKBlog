@@ -1,0 +1,29 @@
+---
+title: 'Architecture thoughts'
+date: '2022-12-10'
+slug: 'architecture-thoughts'
+hero_image: './lance-anderson-QdAAasrZhdk-unsplash.jpg'
+hero_image: './lance-anderson-QdAAasrZhdk-unsplash.jpg'
+hero_image_alt: 'building made up of triangles and cubes'
+hero_image_credit_text: 'Lance Anderson'
+hero_image_credit_link: 'https://unsplash.com/photos/QdAAasrZhdk'
+tags: ['architecture', 'separation of concerns', 'app', 'blog']
+---
+
+I'm in the process of creating an e-commerce site and wanted to keep a separation of concerns from the business content / marketing side of things.
+
+To do this I am thinking of having 2 front ends (platform and blog) connected to 1 back end to handle the business logic.
+
+Stacks:
+
+- e-commerce front end: Next
+
+- blog: Gatsby + GraphQL (comes as default data layer with Gatsby)
+
+- back end: NestJs + Postgres
+
+The blog would be more of a marketing / landing page / funnel and the platform would provide the service.
+
+Architecturally does this make sense? I'm a noob at architecture so would like some advice if this is going to cause me problems in the future.
+
+---

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
 import * as styles from '../styles/layout.module.scss';
 import { ReactNode } from '@mdx-js/react/lib';
 
@@ -53,7 +53,15 @@ const Layout = ({ pageTitle, children }: layout) => {
         </nav>
         <hr className={styles.hrStyles} />
         <main className={styles.contentContainer}>
-          <h1 className={styles.heading}>{pageTitle}</h1>
+          <div className={styles.headingContainer}>
+            <h1 className={styles.heading}>{pageTitle}</h1>
+            <button
+              className={styles.headingContainerButton}
+              onClick={() => navigate(-1)}
+            >
+              Back
+            </button>
+          </div>
           {children}
         </main>
         <footer className={styles.layoutFooter}>
