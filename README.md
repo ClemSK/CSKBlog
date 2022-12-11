@@ -1,3 +1,3 @@
-# Blue Chip Devs Blog
+# Dev Blog
 
 Built on Gatsby
