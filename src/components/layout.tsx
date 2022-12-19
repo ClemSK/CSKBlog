@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
-import * as styles from '../styles/layout.module.scss';
+import * as styles from '../styles/index.module.scss';
+
 import { ReactNode } from '@mdx-js/react/lib';
 
 interface layout {
@@ -65,7 +66,7 @@ const Layout = ({ pageTitle, children }: layout) => {
           {children}
         </main>
         <footer className={styles.layoutFooter}>
-          <p>Created with ❤️ by Blue Chip Devs</p>
+          <p>Created with ❤️ by Clem</p>
           <p>&copy; {date}</p>
         </footer>
       </div>

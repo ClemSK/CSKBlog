@@ -1,0 +1,15 @@
+@use '../utils/functions.module.scss' as *;
+@use '../utils/breakpoints.module.scss' as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': '>=7.12.3 <8.0.0'
+  '@mdx-js': link:@mdx-js
   '@mdx-js/react': ^2.1.5
   '@types/node': ^18.11.9
   '@types/react': ^18.0.25
   '@types/react-dom': ^18.0.8
+  '@types/react-helmet': ^6.1.6
   babel-eslint: ^10.0.0
   eslint: '>= 4.12.1'
   gatsby: ^5.2.0
@@ -18,14 +20,17 @@ specifiers:
   gatsby-source-filesystem: ^5.2.0
   gatsby-transformer-sharp: ^5.2.0
   graphql: '>=16.0.0 <17.0.0'
+  lib: link:@types/@mdx-js/react/lib
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-helmet: ^6.1.0
   sass: ^1.56.1
   typescript: ^4.8.4
   webpack: ^4.36.0 || ^5.0.0
 
 dependencies:
   '@babel/core': 7.20.5
+  '@mdx-js': link:@mdx-js
   '@mdx-js/react': 2.1.5_react@18.2.0
   babel-eslint: 10.1.0_eslint@7.32.0
   eslint: 7.32.0
@@ -39,8 +44,10 @@ dependencies:
   gatsby-source-filesystem: 5.2.0_gatsby@5.2.0
   gatsby-transformer-sharp: 5.2.0_d7v6q6e2kgvgqfgk3vds3675ve
   graphql: 16.6.0
+  lib: link:@types/@mdx-js/react/lib
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-helmet: 6.1.0_react@18.2.0
   sass: 1.56.1
   webpack: 5.75.0
 
@@ -48,6 +55,7 @@ devDependencies:
   '@types/node': 18.11.10
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
+  '@types/react-helmet': 6.1.6
   typescript: 4.9.3
 
 packages:
@@ -1429,7 +1437,7 @@ packages:
       '@babel/runtime': 7.20.6
       '@parcel/namer-default': 2.6.2_@parcel+core@2.6.2
       '@parcel/plugin': 2.6.2_@parcel+core@2.6.2
-      gatsby-core-utils: 4.2.0
+      gatsby-core-utils: 4.3.1
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -2634,6 +2642,12 @@ packages:
 
   /@types/react-dom/18.0.9:
     resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
+    dependencies:
+      '@types/react': 18.0.25
+    dev: true
+
+  /@types/react-helmet/6.1.6:
+    resolution: {integrity: sha512-ZKcoOdW/Tg+kiUbkFCBtvDw0k3nD4HJ/h/B9yWxN4uDO8OkRksWTO+EL+z/Qu3aHTeTll3Ro0Cc/8UhwBCMG5A==}
     dependencies:
       '@types/react': 18.0.25
     dev: true
@@ -5729,6 +5743,27 @@ packages:
 
   /gatsby-core-utils/4.2.0:
     resolution: {integrity: sha512-REU+clGHBrNnEBQzVZbVWLRhS059AdNx/843JzqXQO3XrMYkfZoWhL2apQ+ZJSOf6RO3jlSxfBtQ6ULelrvYvA==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@babel/runtime': 7.20.6
+      ci-info: 2.0.0
+      configstore: 5.0.1
+      fastq: 1.13.0
+      file-type: 16.5.4
+      fs-extra: 10.1.0
+      got: 11.8.5
+      import-from: 4.0.0
+      lmdb: 2.5.3
+      lock: 1.1.0
+      node-object-hash: 2.3.10
+      proper-lockfile: 4.1.2
+      resolve-from: 5.0.0
+      tmp: 0.2.1
+      xdg-basedir: 4.0.0
+    dev: false
+
+  /gatsby-core-utils/4.3.1:
+    resolution: {integrity: sha512-KKNWjnqOPTsRJRHFUcyUGE7NW058tL54SiUJUqZiaeEuXDhglFR0kclXQdN50j1a+RCLa05X2x6XSeWYlzCung==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@babel/runtime': 7.20.6
@@ -9403,6 +9438,22 @@ packages:
     resolution: {integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==}
     dev: false
 
+  /react-fast-compare/3.2.0:
+    resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
+    dev: false
+
+  /react-helmet/6.1.0_react@18.2.0:
+    resolution: {integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==}
+    peerDependencies:
+      react: '>=16.3.0'
+    dependencies:
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-fast-compare: 3.2.0
+      react-side-effect: 2.1.2_react@18.2.0
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -9424,6 +9475,14 @@ packages:
       neo-async: 2.6.2
       react: 18.2.0
       webpack: 5.75.0
+    dev: false
+
+  /react-side-effect/2.1.2_react@18.2.0:
+    resolution: {integrity: sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==}
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react/18.2.0:

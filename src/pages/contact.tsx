@@ -2,7 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import Seo from '../components/seo';
-import * as styles from '../styles/contact.module.scss';
+import * as styles from '../styles/components/contact.module.scss';
 
 const ContactPage = () => {
   return (

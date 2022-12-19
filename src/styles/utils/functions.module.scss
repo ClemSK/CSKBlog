@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+//*  function to convert pixels to rem units
+
+@function rem($pixels, $content: 16) {
+  @return (math.div($pixels, $content)) * 1rem;
+}

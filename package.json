@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@babel/core": ">=7.12.3 <8.0.0",
+    "@mdx-js": "link:@mdx-js",
     "@mdx-js/react": "^2.1.5",
     "babel-eslint": "^10.0.0",
     "eslint": ">= 4.12.1",
@@ -30,8 +31,10 @@
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-transformer-sharp": "^5.2.0",
     "graphql": ">=16.0.0 <17.0.0",
+    "lib": "link:@types/@mdx-js/react/lib",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "sass": "^1.56.1",
     "webpack": "^4.36.0 || ^5.0.0"
   },
@@ -39,6 +42,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
+    "@types/react-helmet": "^6.1.6",
     "typescript": "^4.8.4"
   }
 }

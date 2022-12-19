@@ -1,0 +1,15 @@
+@use '../utils/functions.module.scss' as *;
+@use '../utils/breakpoints.module.scss' as *;
+
+:root {
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.25rem;
+  --large-screen-width: 2170px;
+  --small-screen-width: 90vw;
+  --fixed-width: 50rem;
+}
+
+.App {
+  width: 100%;
+}

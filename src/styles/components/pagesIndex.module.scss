@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins&family=Roboto:wght@700&family=Share+Tech+Mono&display=swap');
+@use '../global/fonts.module.scss' as *;
+
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins&family=Roboto:wght@700&family=Share+Tech+Mono&display=swap');
 
 * {
-  font-family: 'Oswald', sans-serif;
+  font-family: --oswald;
   //   text-transform: uppercase;
 }
 

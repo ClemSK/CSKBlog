@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins&family=Roboto:wght@700&family=Share+Tech+Mono&display=swap');
+@import '../../global/fonts.module.scss';
 
 .section {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--oswald);
   display: flex;
   justify-content: center;
-  //   max-width: 700px;
-  font-family: sans-serif;
   width: 100vw;
   max-width: 1200px;
 
@@ -60,6 +58,7 @@
   .nav-link-item {
   }
   .nav-link-text {
+    font-family: var(--oswald);
     color: #58b6bd;
     text-decoration: none;
   }
@@ -77,7 +76,8 @@
     font-weight: 700;
     margin: 3rem 0;
     background: #00b5e5;
-    font-family: 'Oswald';
+    // font-family: 'Oswald';
+    font-family: var(--oswald);
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

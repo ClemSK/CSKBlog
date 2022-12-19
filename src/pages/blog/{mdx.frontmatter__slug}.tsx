@@ -3,9 +3,8 @@ import Layout from '../../components/layout';
 import Seo from '../../components/seo';
 import { graphql, Link } from 'gatsby';
 import { ReactNode } from '@mdx-js/react/lib';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
-import * as styles from '../../styles/mdxFrontmatter.module.scss';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import * as styles from '../../styles/components/blog/mdxFrontmatter.module.scss';
 
 interface IBlog {
   data: any;
@@ -14,6 +13,10 @@ interface IBlog {
 
 const BlogPost = ({ data, children }: IBlog) => {
   const image = getImage(data.mdx.frontmatter.hero_image) as IGatsbyImageData;
+
+  const handleTags = data.mdx.frontmatter.tags.map((tag: number, i: string) => {
+    return <li className={styles.tagStyles}>- {tag}</li>;
+  });
 
   return (
     <>
@@ -28,8 +31,6 @@ const BlogPost = ({ data, children }: IBlog) => {
               width: '100%',
               height: '500px',
             }}
-            // width={"100"}
-            // height="100%"
             image={image}
             alt={data.mdx.frontmatter.hero_image_alt}
             className={styles.img}
@@ -66,6 +67,7 @@ export const query = graphql`
             gatsbyImageData
           }
         }
+        tags
       }
     }
   }
