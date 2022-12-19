@@ -2,7 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import { StaticImage } from 'gatsby-plugin-image';
-import * as styles from '../styles/aboutPage.module.scss';
+import * as styles from '../styles/components/aboutPage.module.scss';
 
 const AboutPage = () => {
   return (

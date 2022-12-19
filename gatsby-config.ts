@@ -13,13 +13,13 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/CSK-logo.png',
       },
     },
-    'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -30,25 +30,11 @@ const config: GatsbyConfig = {
       },
       __key: 'images',
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'pages',
-    //     path: './src/pages/',
-    //   },
-    //   __key: 'pages',
-    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
-        // defaultLayouts: {
-        //   posts: require.resolve(
-        //     './src/pages/blog/{mdx.frontmatter__slug}.tsx'
-        //   ),
-        //   default: require.resolve('./src/pages/blog/index.tsx'),
-        // },
       },
     },
     {
@@ -61,10 +47,13 @@ const config: GatsbyConfig = {
     // {
     //   resolve: `gatsby-plugin-mdx`,
     //   options: {
-    //     defaultLayouts: {
-    //       posts: require.resolve('./src/components/blog-layout.js'),
-    //       default: require.resolve('./src/components/layout.js'),
-    //     },
+    //     // Footnotes mode (default: true)
+    //     footnotes: true,
+    //     // GitHub Flavored Markdown mode (default: true)
+    //     gfm: true,
+    //     // Plugins configs
+    //     plugins: [],
+    //     extensions: [`.md`, `.mdx`],
     //   },
     // },
   ],
